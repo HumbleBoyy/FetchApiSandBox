@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>Fetch Api Sand Box</title>
 </head>
 <body>
-    Hello World
-
+    <button id="getText" class="btn btn-primary">Get Text</button>
+    <button id="getUsers" class="btn btn-secondary">Get Users</button>
+    <button id="getPosts" class="btn btn-success">Get Posts</button>
+    <div id="outPut"></div>
+    <hr>
+    <form id="addPost">
+        <div>
+            <input type="text" id="title" placeholder="Title">
+        </div>
+        <div>
+            <textarea type="text" id="body" placeholder="Body"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
 
     <script src="./app.js"></script>
 </body>
