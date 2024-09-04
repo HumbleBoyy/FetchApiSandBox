@@ -7,21 +7,25 @@
     <title>Fetch Api Sand Box</title>
 </head>
 <body>
-    <button id="getText" class="btn btn-primary">Get Text</button>
-    <button id="getUsers" class="btn btn-secondary">Get Users</button>
-    <button id="getPosts" class="btn btn-success">Get Posts</button>
+    <div class="container">
+     <h1 class="display-4 mb-4">Fetch API SandBox</h1>
+     <div class="d-flex gap-2 mb-2">
+        <button id="getText" class="btn btn-primary">Get Text</button>
+        <button id="getUsers" class="btn btn-dark">Get Users</button>
+        <button id="getPosts" class="btn btn-success">Get Posts</button>
+     </div>
     <div id="outPut"></div>
     <hr>
-    <form id="addPost">
-        <div>
-            <input type="text" id="title" placeholder="Title">
+    <form id="addPost" class="gap-2">
+        <div class="form-group mt-2">
+            <input type="text" class="form-control" id="title" placeholder="Title">
         </div>
-        <div>
-            <textarea type="text" id="body" placeholder="Body"></textarea>
+        <div class="form-group mt-2">
+            <textarea type="text" class="form-control" id="body" placeholder="Body"></textarea>
         </div>
-        <input type="submit" value="Submit">
+        <input type="submit" class="btn btn-danger mt-2" value="Submit">
     </form>
-
+</div>
     <script src="./app.js"></script>
 </body>
 </html>

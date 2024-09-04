@@ -26,13 +26,13 @@ function getUsers(){
     fetch('users.json')
     .then((res)=> res.json())
     .then((data)=> {
-        let outPut = '<h2>Users</h2>'
+        let outPut = '<h2 class="mb-4">Users</h2>'
         data.forEach((user)=> {
            outPut += `
-             <ul>
-               <li>ID: ${user.id}</li>
-               <li>Name: ${user.name}</li>
-               <li>Email: ${user.email}</li>
+             <ul class="list-group mt-2">
+               <li class="list-group-item">ID: ${user.id}</li>
+               <li class="list-group-item">Name: ${user.name}</li>
+               <li class="list-group-item">Email: ${user.email}</li>
              </ul>
            `;
         })
@@ -50,11 +50,11 @@ function getPosts(){
         console.log(res.json())
     })
     .then((data)=> {
-       let result = "<h2>Posts</h2>";
+       let result = "<h2 class='mb-4'>Posts</h2>";
 
        data.forEach((post)=> {
         result += `
-        <div>
+        <div class="card card-body mb-2">
           <h3>${post.title}</h3>
           <p>${post.body}</p>
         </div>
